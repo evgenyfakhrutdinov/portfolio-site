@@ -74,9 +74,7 @@ p {
 
 .container {
   margin: auto;
-  padding-right: 125px;
-  padding-left: 125px;
-  width: 1400px;
+  width: 1150px;
 }
 
 .about-me__description {
@@ -237,7 +235,7 @@ h2 {
   position: absolute;
   display: block;
   top: 320px;
-  right: 965px;
+  left: 125px;
 }
 
 .contacts__title {
