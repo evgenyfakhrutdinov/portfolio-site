@@ -10,6 +10,7 @@ body {
   font-family: "Geologica", sans-serif;
   font-style: normal;
   font-weight: 400;
+  overflow-wrap: break-word;
 }
 
 h1,
