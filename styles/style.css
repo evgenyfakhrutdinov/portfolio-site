@@ -31,7 +31,7 @@ p {
   position: relative;
   height: 765px;
   min-width: 1400px;
-  background-image: url(/resources/portfolio-bg.png);
+  background-image: url(../resources/portfolio-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
@@ -224,7 +224,7 @@ h2 {
   position: relative;
   min-width: 1400px;
   height: 717px;
-  background-image: url(/resources/contacts-fullWidthImg.png);
+  background-image: url(../resources/contacts-fullWidthImg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
