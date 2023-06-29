@@ -10,7 +10,6 @@ body {
   font-family: "Geologica", sans-serif;
   font-style: normal;
   font-weight: 400;
-  overflow-wrap: break-word;
 }
 
 h1,
@@ -47,13 +46,13 @@ p {
   background: #000000;
   padding: 9px;
   border-radius: 45px;
+  text-decoration: none;
   color: #00f6ff;
 }
 
 .nav {
   float: right;
   margin-top: 40px;
-  display: block;
 }
 
 .nav-link {
@@ -83,15 +82,16 @@ p {
   top: 334px;
   width: 430px;
   font-size: 20px;
-  line-height: 26px;
+  line-height: 29px;
   color: #ffffff;
 }
 
 .about-me__title {
   position: absolute;
   top: 466px;
+  width: 919px;
   font-size: 80px;
-  line-height: 70px;
+  line-height: 83px;
   color: #00f6ff;
 }
 
