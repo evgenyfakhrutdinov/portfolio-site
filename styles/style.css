@@ -197,15 +197,15 @@ h2 {
   padding-bottom: 74px;
 }
 
-.service__black-ellipse {
-  position: relative;
+.service__background {
+  padding: 40px;
+  height: 283px;
+  background-color: #191c19;
+  border-radius: 30px;
 }
 
 .service__title {
   padding-bottom: 15px;
-  position: absolute;
-  top: 40px;
-  left: 40px;
   font-size: 55px;
   line-height: 72px;
 
@@ -213,10 +213,6 @@ h2 {
 }
 
 .service__desc {
-  position: absolute;
-  top: 127px;
-  left: 40px;
-  right: 361px;
   font-size: 22px;
   line-height: 29px;
 
@@ -224,21 +220,17 @@ h2 {
 }
 
 .contacts {
-  position: relative;
-  min-width: 1400px;
   height: 717px;
   background-image: url(../resources/contacts-fullWidthImg.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50%;
+  background-position: right;
+  background-color: #191c19;
   border-radius: 30px;
 }
 
 .contatcs__text-wrapper {
-  position: absolute;
+  padding-top: 320px;
   display: block;
-  top: 320px;
-  left: 125px;
 }
 
 .contacts__title {
@@ -248,14 +240,12 @@ h2 {
   line-height: 60px;
 }
 
-.contacts__insta,
-.contacts__tlg {
+.contacts__link-wrapper {
   margin-bottom: 20px;
 }
 
-.contacts__insta-link,
-.contacts__tlg-link,
-.contacts__mail-link {
+.contacts__link {
+  margin-bottom: 20px;
   font-size: 60px;
   line-height: 60px;
   text-decoration: none;
@@ -263,15 +253,7 @@ h2 {
   color: #fff;
 }
 
-.contacts__insta-link:hover {
-  color: #00f6ff;
-}
-
-.contacts__tlg-link:hover {
-  color: #00f6ff;
-}
-
-.contacts__mail-link:hover {
+.contacts__link:hover {
   color: #00f6ff;
 }
 
