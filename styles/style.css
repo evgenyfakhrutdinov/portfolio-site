@@ -172,6 +172,7 @@ h2 {
 
 .competention__title {
   margin-bottom: 15px;
+  width: 1048px;
   font-size: 35px;
   line-height: 46px;
   color: #00f6ff;
@@ -179,6 +180,7 @@ h2 {
 
 .competention__desc {
   padding-right: 499px;
+  width: 1150px;
   font-size: 22px;
   line-height: 29px;
 
@@ -187,6 +189,7 @@ h2 {
 
 .services__title {
   padding-bottom: 74px;
+  width: 403px;
   font-size: 35px;
   line-height: 46px;
 
