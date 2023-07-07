@@ -260,7 +260,7 @@ h2 {
   background-color: #ffffff;
 }
 
-.footer-text {
+.footer__text {
   padding-top: 76px;
   padding-bottom: 66px;
   color: #000;
@@ -269,7 +269,7 @@ h2 {
   letter-spacing: -0.6px;
 }
 
-.footer-desc {
+.footer__desc {
   padding-bottom: 24px;
   color: #000;
   font-size: 20px;
