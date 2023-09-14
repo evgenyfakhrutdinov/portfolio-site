@@ -1,0 +1,28 @@
+.about-me__description {
+    position: absolute;
+    top: 334px;
+    width: 430px;
+    font-size: 21px;
+    line-height: 29px;
+    color: #ffffff;
+  }
+
+  .about-me__title {
+    position: absolute;
+    top: 466px;
+    width: 919px;
+    font-size: 80px;
+    line-height: 83px;
+    color: #00f6ff;
+  }
+
+  @media (max-width: 1199px) {
+    .about-me__title {
+      font-size: 60px;
+      width: 727px;
+    }
+    }
+
+    @media (max-width: 767px) {
+
+    }

@@ -1,3 +1,12 @@
+@import url(../styles/header.css);
+@import url(../styles/about-me.css);
+@import url(../styles/projects.css);
+@import url(../styles/competencies.css);
+@import url(../styles/services.css);
+@import url(../styles/contacts.css);
+@import url(../styles/footer.css);
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -6,7 +15,6 @@ body {
   width: 100%;
   background-color: #000000;
   background-size: 100%;
-  min-width: 1400px;
   font-family: "Geologica", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -27,72 +35,9 @@ p {
   margin-top: 150px;
 }
 
-.header {
-  position: relative;
-  height: 765px;
-  min-width: 1400px;
-  background-image: url(../resources/portfolio-bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50%;
-}
-
-.logo {
-  position: absolute;
-  top: 27px;
-  font-weight: 700;
-  font-size: 43px;
-  letter-spacing: -0.11em;
-  background: #000000;
-  padding: 9px;
-  border-radius: 45px;
-  text-decoration: none;
-  color: #00f6ff;
-}
-
-.nav {
-  float: right;
-  margin-top: 40px;
-}
-
-.nav-link {
-  margin-right: 50px;
-  font-size: 18px;
-  line-height: 23px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.nav-link:last-child {
-  margin-right: 0;
-}
-
-.nav-link:hover {
-  color: #00f6ff;
-}
-
 .container {
   margin: auto;
   width: 1150px;
-}
-
-.about-me__description {
-  position: absolute;
-  top: 334px;
-  width: 430px;
-  font-size: 20px;
-  line-height: 29px;
-  color: #ffffff;
-}
-
-.about-me__title {
-  position: absolute;
-  top: 466px;
-  width: 919px;
-  font-size: 80px;
-  line-height: 83px;
-  color: #00f6ff;
 }
 
 h2 {
@@ -101,179 +46,18 @@ h2 {
   color: #ffffff;
 }
 
-.projects__title {
-  margin-bottom: 40px;
+@media (max-width: 1199px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 45px;
+  }
 }
 
-.project {
-  position: relative;
-  width: 100%;
-  height: 550px;
-}
+@media (max-width: 767px) {
 
-.project__title {
-  position: absolute;
-  left: 50px;
-  bottom: 94px;
-  font-size: 35px;
-  line-height: 46px;
-
-  color: #ffffff;
-}
-
-.project__description {
-  position: absolute;
-  left: 50px;
-  bottom: 50px;
-  font-size: 30px;
-  line-height: 39px;
-
-  color: #ffffff;
-}
-
-.project-list {
-  margin-bottom: 80px;
-}
-
-.project-btn {
-  padding-top: 56px;
-  display: block;
-  width: 582px;
-  height: 153px;
-  background: #00f6ff;
-  border-radius: 10px;
-  font-size: 30px;
-  line-height: 39px;
-  text-align: center;
-  text-decoration: none;
-  color: #000000;
-  border: 1px solid #00f6ff;
-}
-
-.project-btn:hover {
-  color: #00f6ff;
-  background-color: #000000;
-}
-
-.competencies__title {
-  margin-bottom: 48px;
-}
-
-.competention {
-  margin-bottom: 60px;
-}
-
-.competention__image {
-  margin-bottom: 12px;
-  background: #00f6ff;
-  padding: 9px;
-  border-radius: 10px;
-}
-
-.competention__title {
-  margin-bottom: 15px;
-  width: 1048px;
-  font-size: 35px;
-  line-height: 46px;
-  color: #00f6ff;
-}
-
-.competention__description {
-  padding-right: 499px;
-  width: 1150px;
-  font-size: 22px;
-  line-height: 29px;
-
-  color: #ffffff;
-}
-
-.services__title {
-  margin-bottom: 74px;
-  width: 403px;
-  font-size: 35px;
-  line-height: 46px;
-
-  color: #ffffff;
-}
-
-.service {
-  margin-bottom: 74px;
-}
-
-.service-description__wrapper {
-  padding: 40px;
-  height: 283px;
-  background-color: #191c19;
-  border-radius: 30px;
-}
-
-.service__title {
-  margin-bottom: 15px;
-  font-size: 55px;
-  line-height: 72px;
-
-  color: #00f6ff;
-}
-
-.service__desc {
-  font-size: 22px;
-  line-height: 29px;
-
-  color: #ffffff;
-}
-
-.contacts {
-  height: 717px;
-  background-image: url(../resources/contacts-fullWidthImg.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-color: #191c19;
-  border-radius: 30px;
-}
-
-.contacts__title {
-  padding-top: 320px;
-  margin-bottom: 28px;
-  color: #fff;
-  font-size: 35px;
-  line-height: 60px;
-}
-
-.contacts__link {
-  margin-bottom: 20px;
-  display: block;
-  font-size: 60px;
-  line-height: 60px;
-  text-decoration: none;
-
-  color: #fff;
-}
-
-.contacts__link:hover {
-  color: #00f6ff;
-}
-
-.footer {
-  margin-top: 150px;
-  min-width: 1400px;
-  border-radius: 30px 30px 0px 0px;
-  background-color: #ffffff;
-}
-
-.footer__text {
-  padding-top: 76px;
-  padding-bottom: 66px;
-  color: #000;
-  font-size: 22px;
-  font-family: Manrope, sans-serif;
-  letter-spacing: -0.6px;
-}
-
-.footer__desc {
-  padding-bottom: 24px;
-  color: #000;
-  font-size: 20px;
-  font-family: Manrope, sans-serif;
-  letter-spacing: -0.6px;
-  opacity: 0.5;
 }

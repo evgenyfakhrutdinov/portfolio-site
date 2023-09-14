@@ -1,0 +1,64 @@
+.competencies__title {
+    margin-bottom: 48px;
+  }
+
+  .competencies-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 40px;
+  }
+
+  .competention {
+    width: calc(50% - 5px);
+  }
+
+  .competention:first-child {
+    width: 535px;
+  }
+
+  .competention__image {
+    background: #00f6ff;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .competention__title {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 35px;
+    line-height: 46px;
+    color: #00f6ff;
+  }
+
+  .competention__description {
+    font-size: 22px;
+    line-height: 29px;
+    color: #ffffff;
+  }
+
+  @media (max-width: 1199px) {
+
+    .competencies-list {
+     row-gap: 36px;
+    }
+
+    .competention__title {
+      margin-top: 10px;
+      margin-bottom: 13px;
+      font-size: 28px;
+    }
+
+    .competention:first-child {
+      width: 433px;
+    }
+
+    .competention__description {
+      font-size: 18px;
+    }
+
+  }
+
+  @media (max-width: 767px) {
+
+  }
