@@ -60,5 +60,24 @@
   }
 
   @media (max-width: 767px) {
+    .competencies__title {
+      margin-bottom: 60px;
+    }
 
+    .competencies-list {
+      flex-direction: column;
+      row-gap: 60px;
+    }
+
+    .competention {
+      width: 100%;
+    }
+
+    .competention:first-child {
+      width: 100%;
+    }
+
+    .competention__title {
+      margin-bottom: 15px;
+    }
   }

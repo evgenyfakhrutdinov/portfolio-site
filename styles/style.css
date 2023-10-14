@@ -1,4 +1,5 @@
 @import url(../styles/header.css);
+@import url(../styles/burger.css);
 @import url(../styles/about-me.css);
 @import url(../styles/projects.css);
 @import url(../styles/competencies.css);
@@ -18,6 +19,10 @@ body {
   font-family: "Geologica", sans-serif;
   font-style: normal;
   font-weight: 400;
+}
+
+.body_fixed {
+  overflow: hidden;
 }
 
 h1,
@@ -59,5 +64,15 @@ h2 {
 }
 
 @media (max-width: 767px) {
+  .projects,
+  .competencies,
+  .services {
+    margin-top: 100px;
+  }
 
+  h2 {
+    font-size: 30px;
+    line-height: normal;
+    letter-spacing: -0.9px;
+  }
 }

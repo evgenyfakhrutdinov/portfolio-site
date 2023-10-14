@@ -17,7 +17,7 @@
 
   .service-description__wrapper {
     padding: 40px;
-    height: 283px;
+    height: auto;
     display: flex;
     justify-content: space-between;
     background-color: #191c19;
@@ -27,7 +27,6 @@
   .service__title {
     width: 470px;
     font-size: 55px;
-    line-height: 72px;
 
     color: #00f6ff;
   }
@@ -68,5 +67,26 @@
 
 
   @media (max-width: 767px) {
+    .services__title {
+      margin-bottom: 60px;
+      width: 326px;
+      font-size: 30px;
+    }
+
+    .service-description__wrapper {
+      padding: 30px 20px;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .service__title {
+      width: 100%;
+      font-size: 35px;
+      line-height: normal;
+    }
+
+    .service__desc {
+      width: 100%;
+    }
 
   }

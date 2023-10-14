@@ -24,5 +24,17 @@
     }
 
     @media (max-width: 767px) {
+      .about-me__title {
+        top: 451px;
+        width: 353px;
+        font-size: 40px;
+        line-height: 47px;
+      }
 
+      .about-me__description {
+        top: 338px;
+        width: 310px;
+        font-size: 15px;
+        letter-spacing: -0.45px;
+      }
     }

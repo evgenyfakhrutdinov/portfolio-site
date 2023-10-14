@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geologica&display=swap" rel="stylesheet">
 <link rel="icon" href="resources/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles/style.css" />
     <title>Портфолио</title>
   </head>
   <body>
@@ -15,16 +15,41 @@
     <!-- Хэдер -->
 
     <header class="header">
-        <div class="container header__inner">
-<a class="logo" href="#">Fakhrutdinov</a>
-        <nav class="nav">
-            <a href="#projects" class="nav-link">портфолио</a>
-            <a href="#competencies" class="nav-link">компетенции</a>
-            <a href="#services" class="nav-link">услуги</a>
-            <a href="#contacts" class="nav-link">контакты</a>
-        </nav>
+        <div class="container">
+            <div class="header__inner">
+                <a class="logo" href="#">Fakhrutdinov</a>
+                <nav class="nav">
+                    <a href="#projects" class="nav-link">портфолио</a>
+                    <a href="#competencies" class="nav-link">компетенции</a>
+                    <a href="#services" class="nav-link">услуги</a>
+                    <a href="#contacts" class="nav-link">контакты</a>
+                </nav>
+                <button class="js-burger-btn burger-btn"></button>
+            </div>
         </div>
     </header>
+
+        <!-- Бургер меню -->
+
+<div class="js-burger burger">
+    <div class="burger__content">
+        <a class="logo burger__logo" href="#">Fakhrutdinov</a>
+        <nav class="burger__nav">
+            <a href="#projects" class="burger__nav-link">портфолио</a>
+            <a href="#competencies" class="burger__nav-link">компетенции</a>
+            <a href="#services" class="burger__nav-link">услуги</a>
+            <a href="#contacts" class="burger__nav-link">контакты</a>
+        </nav>
+        <div class="js-burger__content burger__contacts">
+            <p class="burger__contacts-title">для связи:</p>
+            <a class="burger__contacts-link" href="https://www.instagram.com/iamfromfuture/" target="_blank">instagram</a>
+            <a class="burger__contacts-link" href="https://t.me/iamfromfuture" target="_blank">telegram</a>
+            <a class="burger__contacts-link" href="mailto:eugenefahrut@gmail.com" target="_blank">mail</a>
+
+        </div>
+    </div>
+</div>
+
     <main class="main">
 
          <!-- Обо мне -->
@@ -130,7 +155,14 @@
             <h2 class="services__title">Помогаю реализовать широкий спектр задач</h2>
             <ul class="service-list">
                 <li class="service">
-                    <img class="service__image" src="resources/service-dev.png" alt="Изображение с созданием сайта">
+                    <picture>
+                        <source
+                        media="(max-width: 767px)"
+                        src="resources/service-dev_mobile.png"
+                        >
+                        <img class="service__image" src="resources/service-dev.png" alt="Изображение с созданием сайта">
+                    </picture>
+
                     <div class="service-description__wrapper">
                         <h3 class="service__title">Разработка сайта под ключ</h3>
                         <p class="service__desc">Это создание дизайн веб-сайтов, созданный для удобства пользователя и решения бизнес-задач
@@ -138,13 +170,27 @@
                     </div>
                 </li>
                 <li class="service">
-                    <img class="service__image" src="resources/service-layout.png" alt="Изображение с созданием сайта">
+                    <picture>
+                        <source
+                        media="(max-width: 767px)"
+                        src="resources/service-layout_mobile.png"
+                        >
+                        <img class="service__image" src="resources/service-layout.png" alt="Изображение с созданием сайта">
+                    </picture>
+
                     <div class="service-description__wrapper">
                         <h3 class="service__title">Верстка сайтов</h3>
                         <p class="service__desc">Это процесс создания HTML-документов и применения к ним стилей на CSS. Фронтенд разработчик может помочь создать привлекательный и удобный интерфейс для вашего сайта</p>
                     </div>
                     <li class="service">
-                        <img class="service__image" src="resources/service-mobiledev.png" alt="Изображение с разработкой мобильного интерфейса">
+                        <picture>
+                            <source
+                            media="(max-width: 767px)"
+                            src="resources/service-mobiledev_mobile.png"
+                            >
+                            <img class="service__image" src="resources/service-mobiledev.png" alt="Изображение с разработкой мобильного интерфейса">
+                        </picture>
+
                         <div class="service-description__wrapper">
                             <h3 class="service__title">Разработка мобильного интерфейса</h3>
                             <p class="service__desc">Это процесс создания интерактивных элементов на странице с помощью JavaScript. Фронтенд разработчик может помочь создать динамический и удобный пользовательский интерфейс для вашего сайта или приложения.</p>
@@ -185,5 +231,6 @@
 
     </div>
 </footer>
+<script src="burger.js"></script>
   </body>
 </html>
