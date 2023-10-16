@@ -6,6 +6,7 @@
 @import url(../styles/services.css);
 @import url(../styles/contacts.css);
 @import url(../styles/footer.css);
+@import url(../styles/buttons.css);
 
 
 html {
@@ -73,6 +74,5 @@ h2 {
   h2 {
     font-size: 30px;
     line-height: normal;
-    letter-spacing: -0.9px;
   }
 }

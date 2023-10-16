@@ -6,21 +6,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    row-gap: 40px;
+    gap: 100px 50px;
   }
 
   .competention {
-    width: calc(50% - 5px);
-  }
-
-  .competention:first-child {
-    width: 535px;
-  }
-
-  .competention__image {
-    background: #00f6ff;
-    padding: 10px;
-    border-radius: 10px;
+    width: calc(50% - 25px);
   }
 
   .competention__title {
@@ -40,17 +30,13 @@
   @media (max-width: 1199px) {
 
     .competencies-list {
-     row-gap: 36px;
+      gap: 85px 40px;
     }
 
     .competention__title {
       margin-top: 10px;
       margin-bottom: 13px;
       font-size: 28px;
-    }
-
-    .competention:first-child {
-      width: 433px;
     }
 
     .competention__description {
@@ -70,10 +56,6 @@
     }
 
     .competention {
-      width: 100%;
-    }
-
-    .competention:first-child {
       width: 100%;
     }
 

@@ -1,3 +1,13 @@
+.about-me {
+  width: 100%;
+  height: 765px;
+  background-image: url(../resources/portfolio-bg1.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+}
+
 .about-me__description {
     position: absolute;
     top: 334px;
@@ -5,6 +15,7 @@
     font-size: 21px;
     line-height: 29px;
     color: #ffffff;
+    text-shadow: #000 9px 0 5px;
   }
 
   .about-me__title {
@@ -24,6 +35,12 @@
     }
 
     @media (max-width: 767px) {
+      .about-me {
+        height: 716px;
+        background-image: url(../resources/portfolio-bg1.png);
+        object-fit: contain;
+      }
+
       .about-me__title {
         top: 451px;
         width: 353px;
@@ -32,9 +49,9 @@
       }
 
       .about-me__description {
-        top: 338px;
+        top: 355px;
         width: 310px;
         font-size: 15px;
-        letter-spacing: -0.45px;
+        line-height: 22px;
       }
     }

@@ -1,5 +1,7 @@
 .burger-btn {
+  display: none;
   border: none;
+  background: transparent;
 }
 
 .burger {
@@ -12,10 +14,9 @@
     justify-content: end;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.8);
-    opacity: 0;
     visibility: hidden;
-    z-index: 2;
-    transition: all 0.2s ease;
+    z-index: 1;
+    transition: all 0.3s ease;
   }
 
   .burger_open .burger__content {
@@ -23,18 +24,17 @@
   }
 
   .burger_open {
-      opacity: 1;
       visibility: visible;
     }
 
     .burger__content {
       width: 274px;
       height: 100%;
-      overflow: auto;
+      overflow-y: auto;
       background-color: #000;
       padding: 110px 0 50px 30px;
       transition: transform 0.3s linear;
-      transform: translateX(100%);  
+      transform: translateX(100%);
     }
 
     .burger__nav {
@@ -78,9 +78,8 @@
 
     @media (max-width: 1199px) {
         .burger-btn {
-                margin-top: 30px;
                 position: relative;
-                background: transparent;
+                display: block;
                 width: 40px;
                 height: 26px;
                 z-index: 3;
@@ -108,10 +107,10 @@
                 bottom: 0;
           }
 
-          .burger::before {
+          .burger-btn::before {
             transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
           }
-          .burger::after {
+          .burger-btn::after {
             transition: bottom .3s .15s, transform .3s;
           }
           .burger-btn_open::before {
@@ -140,13 +139,6 @@
             letter-spacing: -0.6px;
             text-decoration: none;
           }
-
-          .burger__logo {
-              margin-top: 64px;
-              font-size: 25px;
-              border: solid 3px #00f6ff;
-          }
-
     }
 
     @media (max-width: 767px) {
@@ -154,13 +146,4 @@
         .burger-btn {
             width: 30px;
           }
-        /* .burger-btn {
-          top: -8px;
-          right: 10px;
-          background-image: url(../resources/icon-burger-btn_mobile.png);
-        }
-
-        .burger-btn_open {
-          background-image: url(../resources/icon-close_mobile.png);
-        } */
         }
