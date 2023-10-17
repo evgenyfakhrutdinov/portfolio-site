@@ -7,9 +7,6 @@
     color: #ffffff;
   }
 
-  .service__image {
-    width: 100%;
-  }
 
   .service {
     margin-bottom: 74px;
@@ -47,6 +44,10 @@
 
     .services__title {
       margin-bottom: 60px;
+    }
+
+    .service__image {
+      width: 100%;
     }
 
     .service-description__wrapper {

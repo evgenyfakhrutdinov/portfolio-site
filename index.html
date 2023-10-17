@@ -158,7 +158,7 @@
                     <picture>
                         <source
                         media="(max-width: 767px)"
-                        src="resources/service-dev_mobile.png"
+                        srcset="resources/service-dev_mobile.png"
                         >
                         <img class="service__image" src="resources/service-dev.png" alt="Изображение с созданием сайта">
                     </picture>
@@ -173,7 +173,7 @@
                     <picture>
                         <source
                         media="(max-width: 767px)"
-                        src="resources/service-layout_mobile.png"
+                        srcset="resources/service-layout_mobile.png"
                         >
                         <img class="service__image" src="resources/service-layout.png" alt="Изображение с созданием сайта">
                     </picture>
@@ -186,7 +186,7 @@
                         <picture>
                             <source
                             media="(max-width: 767px)"
-                            src="resources/service-mobiledev_mobile.png"
+                            srcset="resources/service-mobiledev_mobile.png"
                             >
                             <img class="service__image" src="resources/service-mobiledev.png" alt="Изображение с разработкой мобильного интерфейса">
                         </picture>
@@ -202,12 +202,14 @@
 
     <section class="contacts" id="contacts">
         <div class="container">
-                <h2 class="contacts__title">Для связи со мной заполните простую форму</h2>
-<div class="contacts__input">
-    <input class="input" type="text" name="name" placeholder="Имя Фамилия">
-    <input class="input" type="email" name="email" placeholder="example@mail.com">
-</div>
-<button class="contacts__btn">Отправить</button>
+                <div class="contacts-wrapper">
+                    <h2 class="contacts__title">Для связи со мной заполните простую форму</h2>
+                    <div class="contacts__input">
+                        <input class="input" type="text" name="name" placeholder="Имя Фамилия">
+                        <input class="input" type="email" name="email" placeholder="example@mail.com">
+                    </div>
+                    <button class="contacts__btn">Отправить</button>
+                </div>
         </div>
     </section>
 </main>
