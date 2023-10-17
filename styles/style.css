@@ -38,7 +38,7 @@ p {
 .projects,
 .competencies,
 .services {
-  margin-top: 150px;
+  padding-top: 150px;
 }
 
 .container {
@@ -68,7 +68,7 @@ h2 {
   .projects,
   .competencies,
   .services {
-    margin-top: 100px;
+    padding-top: 100px;
   }
 
   h2 {
