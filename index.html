@@ -15,7 +15,7 @@
 
     <!-- Хэдер -->
 
-    <header class="header">
+    <header>
         <div class="container">
             <div class="header__inner">
                 <a class="logo" href="#main">Fakhrutdinov</a>
@@ -50,7 +50,7 @@
     </div>
 </div>
 
-    <main class="main" id="main">
+    <main id="main">
 
          <!-- Обо мне -->
 
@@ -141,7 +141,7 @@
 
                         <li class="competention">
                             <img class="competention__image" src="resources/icon-react.png" alt="Web image">
-                            <h3 class="competention__title">Разработка для мобильных <br> устройств и адаптивная верстка</h3>
+                            <h3 class="competention__title">Разработка для мобильных устройств</h3>
                             <p class="competention__description">фронтенд разработчики должны быть знакомы с различными библиотеками и фреймворками, такими как React, Angular, Vue и другими. Умение использовать готовые решения, адаптировать их под нужды проекта и расширять их функциональность, является очень важным навыком.</p>
                         </li>
             </ul>
@@ -152,7 +152,7 @@
 
     <section class="services" id="services">
         <div class="container">
-            <h2 class="services__title">Помогаю реализовать широкий спектр задач</h2>
+            <h2 class="services__title">Помогаю реализовать <br> широкий спектр задач</h2>
             <ul class="service-list">
                 <li class="service">
                     <picture>
@@ -204,11 +204,13 @@
         <div class="container">
                 <div class="contacts-wrapper">
                     <h2 class="contacts__title">Для связи со мной заполните простую форму</h2>
-                    <div class="contacts__input">
-                        <input class="input" type="text" name="name" placeholder="Имя Фамилия">
-                        <input class="input" type="email" name="email" placeholder="example@mail.com">
-                    </div>
-                    <button class="contacts__btn">Отправить</button>
+                    <form action="#" enctype="text/plain">
+                        <div class="contacts__input">
+                            <input class="input" type="text" name="name" placeholder="Имя Фамилия">
+                            <input class="input" type="email" name="email" placeholder="example@mail.com">
+                        </div>
+                        <button class="contacts__btn">Отправить</button>
+                    </form>
                 </div>
         </div>
     </section>
@@ -216,7 +218,7 @@
 
  <!-- Футер -->
 
-<footer class="footer">
+<footer>
     <div class="container">
         <div class="footer__inner">
             <p class="footer__text">Портфолио фротнтенд-разработчика Евгения Фахрутдинова</p>

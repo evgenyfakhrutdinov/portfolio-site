@@ -11,7 +11,7 @@
 .about-me__description {
     position: absolute;
     top: 334px;
-    width: 430px;
+    max-width: 430px;
     font-size: 21px;
     line-height: 29px;
     color: #ffffff;
@@ -21,7 +21,7 @@
   .about-me__title {
     position: absolute;
     top: 466px;
-    width: 919px;
+    max-width: 919px;
     font-size: 80px;
     line-height: 83px;
     color: #00f6ff;
@@ -30,7 +30,6 @@
   @media (max-width: 1199px) {
     .about-me__title {
       font-size: 60px;
-      width: 727px;
     }
     }
 
@@ -43,14 +42,12 @@
 
       .about-me__title {
         top: 451px;
-        width: 353px;
         font-size: 40px;
         line-height: 47px;
       }
 
       .about-me__description {
         top: 355px;
-        width: 310px;
         font-size: 15px;
         line-height: 22px;
       }
