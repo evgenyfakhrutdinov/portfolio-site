@@ -47,6 +47,11 @@
     font-size: 22px;
   }
 
+  .contacts__btn:hover {
+    background-color:#FFF;
+    transition: 0.7s;
+  }
+
 
   @media (max-width: 1199px) {
     .contacts {
