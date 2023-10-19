@@ -1,7 +1,5 @@
   .contacts {
-    height: 717px;
-    display: flex;
-    justify-content: space-between;
+    max-height: 717px;
     border-radius: 30px;
     background-color: #191c19;
     background-image: url(../resources/contacts-image.png);
@@ -10,7 +8,7 @@
     background-size: contain;
   }
 
-  .contacts-wrapper {
+  .contacts__wrapper {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -36,6 +34,7 @@
   }
 
   .contacts__btn {
+    margin-bottom: 50px;
     width: 450px;
     height: 70px;
     border: none;
@@ -56,10 +55,9 @@
   @media (max-width: 1199px) {
     .contacts {
       background-image: url(../resources/contacts-image_tablet.png);
-      height: 484px;
     }
 
-    .contacts-wrapper {
+    .contacts__wrapper {
       row-gap: 40px;
     }
 
@@ -91,7 +89,11 @@
       border-radius: 0;
     }
 
-    .contacts-wrapper {
+    .contacts__title {
+      width: 100%;
+    }
+
+    .contacts__wrapper {
       width: 80%;
     }
   }
