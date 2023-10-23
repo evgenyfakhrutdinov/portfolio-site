@@ -27,11 +27,11 @@
 
   .nav {
     display: flex;
-    gap: 50px;
   }
 
   .nav-list {
     display: flex;
+    gap: 50px;
   }
 
   .nav-link {
