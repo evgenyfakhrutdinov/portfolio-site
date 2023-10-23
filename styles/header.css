@@ -30,6 +30,10 @@
     gap: 50px;
   }
 
+  .nav-list {
+    display: flex;
+  }
+
   .nav-link {
     padding: 5px 10px;
     font-size: 18px;

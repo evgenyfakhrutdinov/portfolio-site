@@ -37,7 +37,7 @@
       transform: translateX(100%);
     }
 
-    .burger__nav {
+    .burger__nav-list {
       margin: 50px 0 90px 0;
       display: flex;
       flex-direction: column;

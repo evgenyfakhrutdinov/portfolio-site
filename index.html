@@ -20,10 +20,12 @@
             <div class="header__inner">
                 <a class="logo" href="#main">Fakhrutdinov</a>
                 <nav class="nav">
-                    <a href="#projects" class="nav-link">портфолио</a>
-                    <a href="#competencies" class="nav-link">компетенции</a>
-                    <a href="#services" class="nav-link">услуги</a>
-                    <a href="#contacts" class="nav-link">контакты</a>
+                    <ul class="nav-list">
+                        <li><a href="#projects" class="nav-link">портфолио</a></li>
+                        <li><a href="#competencies" class="nav-link">компетенции</a></li>
+                        <li><a href="#services" class="nav-link">услуги</a></li>
+                        <li><a href="#contacts" class="nav-link">контакты</a></li>
+                    </ul>
                 </nav>
                 <button class="js-burger-btn burger-btn"></button>
             </div>
@@ -34,11 +36,13 @@
 
 <div class="js-burger burger">
     <div class="burger__content">
-        <nav class="burger__nav">
-            <a href="#projects" class="burger__nav-link">портфолио</a>
-            <a href="#competencies" class="burger__nav-link">компетенции</a>
-            <a href="#services" class="burger__nav-link">услуги</a>
-            <a href="#contacts" class="burger__nav-link">контакты</a>
+        <nav>
+            <ul class="burger__nav-list">
+                <li><a href="#projects" class="burger__nav-link">портфолио</a></li>
+                <li><a href="#competencies" class="burger__nav-link">компетенции</a></li>
+                <li><a href="#services" class="burger__nav-link">услуги</a></li>
+                <li><a href="#contacts" class="burger__nav-link">контакты</a></li>
+            </ul>
         </nav>
         <div class="js-burger__content burger__contacts">
             <p class="burger__contacts-title">для связи:</p>
@@ -54,13 +58,13 @@
 
          <!-- Обо мне -->
 
-        <section class="about-me">
+        <section class="about">
             <div class="container">
-          <p class="about-me__description">
+          <p class="about__description">
             Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые
             повышают престиж компании и позволяют выделиться на фоне конкурентов
           </p>
-          <h1 class="about-me__title">
+          <h1 class="about__title">
             Привет, я Женя — фронтенд разработчик и дизайнер сайтов
           </h1>
         </div>
@@ -211,9 +215,8 @@
 
     <section class="contacts" id="contacts">
         <div class="container">
-                <div class="contacts__wrapper">
-                    <form action="#" enctype="text/plain"></form>
                     <h2 class="contacts__title">Для связи со мной заполните простую форму</h2>
+                    <form class="form__wrapper" action="#" enctype="text/plain">
 
                         <div class="contacts__input">
                             <input class="input" type="text" name="name" placeholder="Имя Фамилия">
@@ -222,7 +225,6 @@
 
                         <button class="contacts__btn">Отправить</button>
                     </form>
-                </div>
         </div>
     </section>
 </main>

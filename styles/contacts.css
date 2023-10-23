@@ -1,4 +1,5 @@
   .contacts {
+    padding: 100px 0 100px 0;
     max-height: 717px;
     border-radius: 30px;
     background-color: #191c19;
@@ -8,7 +9,7 @@
     background-size: contain;
   }
 
-  .contacts__wrapper {
+  .form__wrapper {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -16,6 +17,7 @@
   }
 
   .contacts__title {
+    margin-bottom: 60px;
     max-width: 553px;
     font-size: 60px;
     line-height: 60px;
@@ -34,7 +36,6 @@
   }
 
   .contacts__btn {
-    margin-bottom: 50px;
     width: 450px;
     height: 70px;
     border: none;
@@ -44,6 +45,7 @@
     color: #000;
     text-align: center;
     font-size: 22px;
+    cursor: pointer;
   }
 
   .contacts__btn:hover {
@@ -54,10 +56,11 @@
 
   @media (max-width: 1199px) {
     .contacts {
+      padding: 50px 0 86px 0;
       background-image: url(../resources/contacts-image_tablet.png);
     }
 
-    .contacts__wrapper {
+    .form__wrapper {
       row-gap: 40px;
     }
 
@@ -85,6 +88,7 @@
 
   @media (max-width: 767px) {
     .contacts {
+      padding-bottom: 50px;
       background-image: none;
       border-radius: 0;
     }
@@ -93,7 +97,7 @@
       width: 100%;
     }
 
-    .contacts__wrapper {
+    .form__wrapper {
       width: 80%;
     }
   }
